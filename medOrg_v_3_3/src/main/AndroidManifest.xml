@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medorg"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".ApplMedOrg"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/RMZ">
+        <activity android:name="ua.iepor.itdep.ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ua.iepor.itdep.ui.InfoActivity" />
+        <activity android:name="ua.iepor.itdep.ui.QuestionsToDoctorActivity" />
+        <activity android:name="ua.iepor.itdep.ui.StandardQuestActivity" />
+        <activity android:name="ua.iepor.itdep.ui.StandartQuestFromGroupActivity" />
+        <activity android:name="ua.iepor.itdep.ui.StandardQuestEditActivity" />
+        <activity android:name="ua.iepor.itdep.ui.YourQuestionsActivity" />
+        <activity android:name="ua.iepor.itdep.ui.DoctorActivity" />
+        <activity android:name="ua.iepor.itdep.ui.NewDoctorActivity" />
+        <activity android:name="ua.iepor.itdep.ui.EditDoctorActivity" />
+        <activity android:name="ua.iepor.itdep.ui.YourQuestNewActivity" />
+        <activity android:name="ua.iepor.itdep.ui.YourQuestEditActivity" />
+        <activity android:name="ua.iepor.itdep.ui.HistoryActivity" />
+        <activity android:name="ua.iepor.itdep.ui.PruznachennjaLikarjaActivity" />
+        <activity android:name="ua.iepor.itdep.ui.NewPruznActivity" />
+        <activity android:name="ua.iepor.itdep.ui.EditPruznachennjaActivity" />
+        <activity android:name="ua.iepor.itdep.ui.ProfileActivity" />
+        <activity android:name="ua.iepor.itdep.ui.EORTCActivity" />
+        <activity android:name="ua.iepor.itdep.ui.SubVidchuttjaActivity" />
+        <activity android:name="ua.iepor.itdep.ui.DiagnozActivity"/>
+        <provider
+            android:name="ua.iepor.itdep.util.MedOrgContentProvider"
+            android:authorities="ua.com.kistudio.ContentProvider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <!-- Deprecated -->
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name" />
+        <activity android:name=".Main_menu" />
+        <activity
+            android:name=".Questions_to_doctor_Activity"
+            android:label="@string/title_activity_questions_to_doctor_"
+            android:parentActivityName=".BaseActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medorg.BaseActivity" />
+        </activity>
+        <activity android:name=".Your_questions_Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medorg.BaseActivity" />
+        </activity>
+        <activity android:name=".Your_quest_NEW_Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medorg.BaseActivity" />
+        </activity>
+        <activity
+            android:name=".Your_quest_EDIT"
+            android:label="@string/title_activity_your_quest__edit" />
+        <activity
+            android:name=".Your_quest_SHOW_foto"
+            android:label="@string/title_activity_your_quest__show_foto"
+            android:parentActivityName=".BaseActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.medorg.BaseActivity" />
+        </activity>
+        <activity android:name=".Standard_quest_Activity" />
+        <activity
+            android:name=".Standard_quest_from_group_Activity"
+            android:label="@string/title_activity_standard_quest_from_group_" />
+        <activity android:name=".Standard_quest_EDIT_Activity" />
+
+        <!-- Довідник онкологічних закладів -->
+        <activity
+            android:name=".AreasList"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Area"
+            android:label="@string/title_activity_area" />
+        <activity
+            android:name=".CancerOrganizationInfo"
+            android:label="@string/title_activity_cancer_organization_info" />
+        <activity android:name=".Edit_Doct" />
+        <activity android:name=".My_Doctor" />
+        <activity android:name=".Diagnoz" />
+        <activity android:name=".EditDiagnoz" />
+        <activity android:name=".New_Diag" />
+        <activity android:name=".History" />
+        <activity android:name=".Sub_Vidchuttja" />
+        <activity android:name=".Edit_Vidchuttja" />
+        <activity android:name=".New_Vidchuttja" />
+        <activity android:name=".Pruzn_likarja" />
+        <activity android:name=".Edit_Pruzb" />
+        <activity android:name=".New_Pruzn" />
+        <activity android:name=".New_Doctor" />
+        <activity android:name=".Guide_contents" />
+        <activity android:name=".PartOneActivity" />
+        <activity
+            android:name=".Reference"
+            android:label="@string/title_activity_words_reference" />
+        <activity
+            android:name=".Glosarij"
+            android:label="@string/app_name" />
+        <activity android:name=".WordDescription" />
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/title_activity_info" />
+        <activity android:name=".NewDiagQuest" />
+        <activity android:name=".DiagnFirstQuest" />
+        <activity android:name=".DiagnozNextQuest" />
+        <activity android:name=".Profile" />
+        <activity android:name=".DiagnozInputs" />
+        <activity android:name=".SaveResultActivity" />
+        <activity
+            android:name=".WordDescriptionFromGuide"
+            android:label="@string/title_activity_word_description_from_guide" />
+
+    </application>
+
+</manifest>

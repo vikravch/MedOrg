@@ -1,0 +1,55 @@
+<resources>
+
+    <string name="app_name">Медичний\nорганайзер</string>
+    <string name="action_settings">Settings</string>
+    <string name="sponsored_by">При підтримці:</string>
+    <string name="disclamer">Disclamer: you use this application on your own risk.</string>
+    <string name="title_activity_questions_to_doctor_">Questions_to_doctor_Activity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="quest_to_doct">Запитання лікарю</string>
+    <string name="your_quest_to_doct">Мої запитання лікарю</string>
+    <string name="title_activity_your_quest__new_">Your_quest_NEW_Activity</string>
+    <string name="title_activity_your_quest__edit">Your_quest_EDIT</string>
+    <string name="title_activity_your_quest__show_foto">Your_quest_SHOW_foto</string>
+    <string name="standard_quest_to_doct">Групи стандартних запитань лікарю</string>
+    <string name="title_activity_standard_quest_from_group_">Standard_quest_from_group_Activity</string>
+    <string name="title_activity_area">Area</string>
+    <string name="title_activity_cancer_organization_info">CancerOrganizationInfo</string>
+    <string name="box">Зберегти</string>
+    <string-array name="names">
+        <item>Ваш діагноз</item>
+        <item>Суб\'єктивні відчуття</item>
+        <item>Призначення лікаря</item>
+    </string-array>
+
+
+    <string name="title_activity_words_reference">WordsReference</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="diagnoz_about">Збережіть в стислому вигляді інформацію про Ваш діагноз. Внесіть дані за допомогою Вашого лікаря. Анкета буде корисною Вам при спілкуванні з іншими лікарями. За відсутності відповідної інформації заповнення всіх розділів анкети може бути неможливим.</string>
+    <string name="next">далі</string>
+    <string name="firstquest">В моїй медичній картці записано:</string>
+    <string name="textfirstdiagn">1.Обсяг анатомічного поширення пухлини за класифікацією TNM:</string>
+    <string name="prev">Назад</string>
+    <string name="title_activity_word_description_from_guide">WordDescriptionFromGuide</string>
+    <string name="button_standart_quest_to_doct">Стандартні</string>
+    <string name="button_your_quest_to_doctor">Мої</string>
+    <string name="info_title">Інформація про розробника:</string>
+    <string name="info_content_first">Інститут експериментальної патології, онкології і радіобіології ім. Р.Є.Кавецького НАН України (ІЕПОР) - сучасний академічний центр із значним матеріально-технічним ресурсом і кадровим потенціалом, що має багаторічний досвід роботи в галузі експериментальної патології, біотехнології, молекулярної і клінічної онкології. \n Наша адреса: Україна 03022, Київ-22, вул. Васильківська, 45 \n Приймальня: з 9.00 до 17.30, понеділок - пятниця. \nТел. +38 (044) 259-01-83. \nФакс +38 (044) 258-16-56 \n e-mail nauka@onconet.kiev.ua \n Сайт http://www.iepor.org.ua</string>
+    <string name="info_content_second">Відділ науково-методичного забезпечення іноваційної діяльності. \nТел. +38 (044) 259-01-67. \nСайт http://www.iepor.org.ua/uk/scientific-methodical-provision-innovations.html \nСайт - http://www.breast-cancer.org.ua</string>
+
+    <string name="doctor_toast_text">Оберіть раніше введого лікаря для перегляду або редагування. Якщо потрібно ввести нового, натисніть Додати.</string>
+    <string name="doctor_empty_text">Лікарів у списку немає</string>
+    <string name="title_activity_diagnoz">DiagnozActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_fragment_diagnoz">Дайте відповідь на усі питання анкети</string>
+    <string name="diagnoz_title">Diagnoz title</string>
+    <string name="next_button">Далі</string>
+    <string name="prev_button">Назад</string>
+    <string name="save_button">Зберегти</string>
+    <string name="diagnoz_saved">Збережено</string>
+    <string name="choosed_text">Обрано:</string>
+    <string name="hint_edit_text_diagnoz">Введіть</string>
+    <string name="pruzn_toast_text">Оберіть призначення</string>
+    <string name="pruzn_empty_text">Призначень немає</string>
+
+</resources>

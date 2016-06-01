@@ -1,0 +1,371 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:2:1-144:12
+	package
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:3:5-33
+		INJECTED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v13:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-v13\23.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:20:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.0\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:8:9-34
+		INJECTED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:11:22-78
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:12:5-71
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:12:22-68
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:13:5-65
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:13:22-62
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:15:5-75
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:15:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:16:5-80
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:16:22-77
+application
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:18:5-142:19
+MERGED from [com.android.support:appcompat-v7:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v13:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-v13\23.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.2.0] C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:22:9-41
+	android:allowBackup
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:20:9-35
+	android:icon
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:21:9-45
+	android:theme
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:23:9-35
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:19:9-35
+activity#ua.iepor.itdep.ui.MainActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:24:9-30:20
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:24:19-64
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:25:13-29:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:28:27-74
+activity#ua.iepor.itdep.ui.InfoActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:31:9-67
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:31:19-64
+activity#ua.iepor.itdep.ui.QuestionsToDoctorActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:32:9-80
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:32:19-77
+activity#ua.iepor.itdep.ui.StandardQuestActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:33:9-76
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:33:19-73
+activity#ua.iepor.itdep.ui.StandartQuestFromGroupActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:34:9-85
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:34:19-82
+activity#ua.iepor.itdep.ui.StandardQuestEditActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:35:9-80
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:35:19-77
+activity#ua.iepor.itdep.ui.YourQuestionsActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:36:9-76
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:36:19-73
+activity#ua.iepor.itdep.ui.DoctorActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:37:9-69
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:37:19-66
+activity#ua.iepor.itdep.ui.NewDoctorActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:38:9-72
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:38:19-69
+activity#ua.iepor.itdep.ui.EditDoctorActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:39:9-73
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:39:19-70
+activity#ua.iepor.itdep.ui.YourQuestNewActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:40:9-75
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:40:19-72
+activity#ua.iepor.itdep.ui.YourQuestEditActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:41:9-76
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:41:19-73
+activity#ua.iepor.itdep.ui.HistoryActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:42:9-70
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:42:19-67
+activity#ua.iepor.itdep.ui.PruznachennjaLikarjaActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:43:9-83
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:43:19-80
+activity#ua.iepor.itdep.ui.NewPruznActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:44:9-71
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:44:19-68
+activity#ua.iepor.itdep.ui.EditPruznachennjaActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:45:9-80
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:45:19-77
+activity#ua.iepor.itdep.ui.ProfileActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:46:9-70
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:46:19-67
+activity#ua.iepor.itdep.ui.EORTCActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:47:9-68
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:47:19-65
+activity#ua.iepor.itdep.ui.SubVidchuttjaActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:48:9-76
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:48:19-73
+activity#ua.iepor.itdep.ui.DiagnozActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:49:9-69
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:49:19-67
+provider#ua.iepor.itdep.util.MedOrgContentProvider
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:50:9-54:39
+	android:authorities
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:52:13-66
+	android:enabled
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:53:13-35
+	android:exported
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:54:13-36
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:51:13-69
+activity#com.example.medorg.SplashActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:58:9-60:48
+	android:label
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:60:13-45
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:59:13-43
+activity#com.example.medorg.Main_menu
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:61:9-47
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:61:19-44
+activity#com.example.medorg.Questions_to_doctor_Activity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:62:9-69:20
+	android:label
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:64:13-72
+	android:parentActivityName
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:65:13-55
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:63:13-57
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:66:13-68:67
+	android:value
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:68:17-64
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:67:17-63
+activity#com.example.medorg.Your_questions_Activity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:70:9-74:20
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:70:19-58
+activity#com.example.medorg.Your_quest_NEW_Activity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:75:9-79:20
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:75:19-58
+activity#com.example.medorg.Your_quest_EDIT
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:80:9-82:71
+	android:label
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:82:13-68
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:81:13-44
+activity#com.example.medorg.Your_quest_SHOW_foto
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:83:9-90:20
+	android:label
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:85:13-73
+	android:parentActivityName
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:86:13-55
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:84:13-49
+activity#com.example.medorg.Standard_quest_Activity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:91:9-61
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:91:19-58
+activity#com.example.medorg.Standard_quest_from_group_Activity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:92:9-94:81
+	android:label
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:94:13-78
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:93:13-63
+activity#com.example.medorg.Standard_quest_EDIT_Activity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:95:9-66
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:95:19-63
+activity#com.example.medorg.AreasList
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:98:9-100:48
+	android:label
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:100:13-45
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:99:13-38
+activity#com.example.medorg.Area
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:101:9-103:59
+	android:label
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:103:13-56
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:102:13-33
+activity#com.example.medorg.CancerOrganizationInfo
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:104:9-106:79
+	android:label
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:106:13-76
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:105:13-51
+activity#com.example.medorg.Edit_Doct
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:107:9-47
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:107:19-44
+activity#com.example.medorg.My_Doctor
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:108:9-47
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:108:19-44
+activity#com.example.medorg.Diagnoz
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:109:9-45
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:109:19-42
+activity#com.example.medorg.EditDiagnoz
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:110:9-49
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:110:19-46
+activity#com.example.medorg.New_Diag
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:111:9-46
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:111:19-43
+activity#com.example.medorg.History
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:112:9-45
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:112:19-42
+activity#com.example.medorg.Sub_Vidchuttja
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:113:9-52
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:113:19-49
+activity#com.example.medorg.Edit_Vidchuttja
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:114:9-53
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:114:19-50
+activity#com.example.medorg.New_Vidchuttja
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:115:9-52
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:115:19-49
+activity#com.example.medorg.Pruzn_likarja
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:116:9-51
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:116:19-48
+activity#com.example.medorg.Edit_Pruzb
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:117:9-48
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:117:19-45
+activity#com.example.medorg.New_Pruzn
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:118:9-47
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:118:19-44
+activity#com.example.medorg.New_Doctor
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:119:9-48
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:119:19-45
+activity#com.example.medorg.Guide_contents
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:120:9-52
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:120:19-49
+activity#com.example.medorg.PartOneActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:121:9-53
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:121:19-50
+activity#com.example.medorg.Reference
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:122:9-124:70
+	android:label
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:124:13-67
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:123:13-38
+activity#com.example.medorg.Glosarij
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:125:9-127:48
+	android:label
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:127:13-45
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:126:13-37
+activity#com.example.medorg.WordDescription
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:128:9-53
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:128:19-50
+activity#com.example.medorg.InfoActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:129:9-131:59
+	android:label
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:131:13-56
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:130:13-41
+activity#com.example.medorg.NewDiagQuest
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:132:9-50
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:132:19-47
+activity#com.example.medorg.DiagnFirstQuest
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:133:9-53
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:133:19-50
+activity#com.example.medorg.DiagnozNextQuest
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:134:9-54
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:134:19-51
+activity#com.example.medorg.Profile
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:135:9-45
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:135:19-42
+activity#com.example.medorg.DiagnozInputs
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:136:9-51
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:136:19-48
+activity#com.example.medorg.SaveResultActivity
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:137:9-56
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:137:19-53
+activity#com.example.medorg.WordDescriptionFromGuide
+ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:138:9-140:82
+	android:label
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:140:13-79
+	android:name
+		ADDED from C:\Users\Android\Desktop\Office\Zinger\Zinger\medOrg_v_3_3\src\main\AndroidManifest.xml:139:13-53

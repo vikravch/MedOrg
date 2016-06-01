@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout_QuestStandard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ 
+  <EditText
+      android:id="@+id/editQuestStandard"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:focusable="false"
+      android:inputType="textMultiLine"
+      android:minLines="2"
+      android:scrollbars="vertical"
+      android:text="Запитання (стандартне)" >
+ 
+    </EditText>
+
+    <EditText
+        android:id="@+id/editAnswStandard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="textMultiLine"
+        android:minLines="4"
+        android:onClick="onClick"
+      	android:focusable="false"
+        android:scrollbars="vertical"
+        android:text="Текст відповіді введіть сюди" />
+ 
+</LinearLayout>

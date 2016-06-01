@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dovidnyk_center"
+    android:orientation="vertical"
+    tools:context=".Area" >
+
+    <TextView
+        android:id="@+id/areaTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:gravity="center"
+        android:shadowColor="#C71585"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="Оберіть заклад:"
+        android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/areaListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:divider="@drawable/dialog_divider_horizontal_pink"
+        android:listSelector="@layout/my_listview" >
+
+    </ListView>
+
+</LinearLayout>

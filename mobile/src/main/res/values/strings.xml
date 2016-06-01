@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Zinger</string>
+
+    <string name="button_weight_control_title">WEIGHT CONTROL</string>
+    <string name="button_water_balance_title">WATER BALANCE</string>
+    <string name="button_sleeping_mode_title">SLEEPING MODE</string>
+    <string name="button_pedometr_title">PEDOMETR</string>
+    <string name="title_activity_weight_control">WeightControlActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="activity_weight_title">Weight control</string>
+    <string name="title_activity_water_balance">WaterBalanceActivity</string>
+    <string name="activity_water_title">Water balance</string>
+    <string name="text_coming_soon">Coming soon</string>
+    <string name="alert_dialog_ok">Ok</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+
+    <string name="no_permission_massage">No permission</string>
+
+    <string name="service_center_number">+380686854135</string>
+    <string name="sms_send">Sms send</string>
+    <string name="default_text">Hello</string>
+    <string name="calculate_button_text">Calculate</string>
+    <string name="coffee_cup_radio_button_text">Кофейная чашка</string>
+    <string name="glass_radio_button_text">Стакан</string>
+    <string name="half_liter_radio_button_text">Пол литра</string>
+    <string name="title_activity_sleeping_mode">SleepingModeActivity</string>
+    <string name="sleeping_mode_sleep_text">Go sleep</string>
+    <string name="sleeping_mode_wake_up">Wake up</string>
+    <string name="no_water_text">You haven\'t drank water yet</string>
+    <string name="button_calculate_text">Calculate</string>
+</resources>

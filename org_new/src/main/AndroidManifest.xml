@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ua.com.kistudio.medorg_v2">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.MainActivity">
+
+        </activity>
+        <activity android:name=".ui.activity.ActivityMain">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.InfoActivity" />
+        <activity android:name=".ui.activity.QuestionsToDoctorActivity" />
+        <activity android:name=".ui.activity.StandardQuestActivity" />
+        <activity android:name=".ui.activity.StandartQuestFromGroupActivity" />
+        <activity android:name=".ui.activity.StandardQuestEditActivity" />
+        <activity android:name=".ui.activity.YourQuestionsActivity" />
+        <activity android:name=".ui.activity.DoctorActivity" />
+        <activity android:name=".ui.activity.NewDoctorActivity" />
+        <activity android:name=".ui.activity.EditDoctorActivity" />
+        <activity android:name=".ui.activity.YourQuestNewActivity" />
+        <activity android:name=".ui.activity.YourQuestEditActivity" />
+        <activity android:name=".ui.activity.HistoryActivity" />
+        <activity android:name=".ui.activity.PruznachennjaLikarjaActivity" />
+        <activity android:name=".ui.activity.NewPruznActivity" />
+        <activity android:name=".ui.activity.EditPruznachennjaActivity" />
+        <activity android:name=".ui.activity.ProfileActivity" />
+        <activity android:name=".ui.activity.EORTCActivity" />
+        <activity android:name=".ui.activity.SubVidchuttjaActivity" />
+        <activity android:name=".ui.activity.DiagnozActivity"/>
+        <activity android:name=".ui.activity.Reference"/>
+        <activity android:name=".ui.activity.DiagnozShowActivity"/>
+        <provider
+            android:name=".model.MedOrgContentProvider"
+            android:authorities="ua.com.kistudio.ContentProvider"
+            android:enabled="true"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

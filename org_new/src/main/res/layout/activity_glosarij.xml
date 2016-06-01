@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dovidnyk_center"
+    android:orientation="vertical"
+    tools:context=".Glosarij" >
+
+    <TextView
+        android:id="@+id/wordsTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFF"
+        android:gravity="center_horizontal"
+        android:shadowColor="#C71585"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="Глосарій"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <ListView
+        android:id="@+id/wordsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@layout/my_listview" >
+
+    </ListView>
+
+</LinearLayout>

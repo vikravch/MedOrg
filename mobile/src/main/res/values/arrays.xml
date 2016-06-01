@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="water_balance_title">
+        <item>COUNTER</item>
+        <item>SUMMARY</item>
+    </string-array>
+
+    <string-array name="weight_control_array" >
+        <item>DIAGNOSTICS</item>
+        <item>DIET</item>
+        <item>TRAINING</item>
+    </string-array>
+
+</resources>

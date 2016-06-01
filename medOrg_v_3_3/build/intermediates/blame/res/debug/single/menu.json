@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\build\\intermediates\\res\\merged\\debug\\menu\\questions_to_doctor_.xml",
+        "source": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\src\\main\\res\\menu\\questions_to_doctor_.xml"
+    },
+    {
+        "merged": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\build\\intermediates\\res\\merged\\debug\\menu\\your_quest__new_.xml",
+        "source": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\src\\main\\res\\menu\\your_quest__new_.xml"
+    },
+    {
+        "merged": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\build\\intermediates\\res\\merged\\debug\\menu\\your_quest__show_foto.xml",
+        "source": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\src\\main\\res\\menu\\your_quest__show_foto.xml"
+    },
+    {
+        "merged": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\build\\intermediates\\res\\merged\\debug\\menu\\menu_diagnoz.xml",
+        "source": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\src\\main\\res\\menu\\menu_diagnoz.xml"
+    },
+    {
+        "merged": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\build\\intermediates\\res\\merged\\debug\\menu\\words_reference.xml",
+        "source": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\src\\main\\res\\menu\\words_reference.xml"
+    },
+    {
+        "merged": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\build\\intermediates\\res\\merged\\debug\\menu\\info.xml",
+        "source": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\src\\main\\res\\menu\\info.xml"
+    },
+    {
+        "merged": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\build\\intermediates\\res\\merged\\debug\\menu\\standard_quest_from_group_.xml",
+        "source": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\src\\main\\res\\menu\\standard_quest_from_group_.xml"
+    },
+    {
+        "merged": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\build\\intermediates\\res\\merged\\debug\\menu\\splash.xml",
+        "source": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\src\\main\\res\\menu\\splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\build\\intermediates\\res\\merged\\debug\\menu\\your_quest__edit.xml",
+        "source": "C:\\Users\\Android\\Desktop\\Office\\Zinger\\Zinger\\medOrg_v_3_3\\src\\main\\res\\menu\\your_quest__edit.xml"
+    }
+]

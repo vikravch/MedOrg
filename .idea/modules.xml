@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Zinger.iml" filepath="$PROJECT_DIR$/Zinger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/medOrg_v_3_3/medOrg_v_3_3.iml" filepath="$PROJECT_DIR$/medOrg_v_3_3/medOrg_v_3_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobile/mobile.iml" filepath="$PROJECT_DIR$/mobile/mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org_new/org_new.iml" filepath="$PROJECT_DIR$/org_new/org_new.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smslock/smslock.iml" filepath="$PROJECT_DIR$/smslock/smslock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wear/wear.iml" filepath="$PROJECT_DIR$/wear/wear.iml" />
+    </modules>
+  </component>
+</project>

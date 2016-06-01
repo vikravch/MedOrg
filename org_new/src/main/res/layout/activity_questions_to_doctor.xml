@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/question_bottom"
+    android:orientation="vertical"
+    tools:context=".Questions_to_doctor_Activity" >
+
+    <!-- LayOut в якому розміщено логотип і назва програми -->
+
+    <TextView
+        android:id="@+id/quest_to_doct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/RMZ_TextViewTitle"
+        android:text="@string/quest_to_doct"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/button2"
+            android:text="Стандартні"
+            style="@style/RMZ_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:shadowColor="#C71585"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:id="@+id/btnnext"
+            style="@style/RMZ_Button"
+            android:text="Мої"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:shadowColor="#C71585"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/listView2"
+            style="@layout/my_listview"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@drawable/btn_focused"
+            android:divider="@drawable/dialog_divider_horizontal_pink"
+            android:drawSelectorOnTop="true"
+            android:listSelector="@layout/my_listview"
+            android:visibility="visible"
+             >
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        style="@style/RMZ_InnerButtonLinear"
+        android:orientation="vertical" >
+
+
+        <Button
+            android:id="@+id/btnStandartQuestToDoct"
+            android:text="@string/button_standart_quest_to_doct"
+            style="@style/RMZ_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:shadowColor="#C71585"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:id="@+id/btnYourQuestToDoct"
+            style="@style/RMZ_Button"
+            android:text="@string/button_your_quest_to_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:shadowColor="#C71585"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:textSize="25sp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

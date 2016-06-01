@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style name="btn_rmz_text_appearence">
+    <item name="android:textSize">14sp</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textColor">@android:color/tab_indicator_text</item>
+    <item name="android:gravity">center_vertical|center_horizontal</item>
+</style>

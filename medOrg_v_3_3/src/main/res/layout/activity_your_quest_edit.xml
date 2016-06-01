@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editQuest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+      android:focusable="false"
+        android:onClick="onClick"
+        android:scrollbars="vertical"
+        android:text="Запитання" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editAnsw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="textMultiLine"
+        android:minLines="4"
+      android:focusable="false"
+        android:onClick="onClick"
+        android:scrollbars="vertical"
+        android:text="Текст відповіді введіть сюди" />
+
+    <Button
+        android:id="@+id/saveAnsw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:text="Зберегти тексти" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/listenAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Прослухати запис" />
+
+        <Button
+            android:id="@+id/makeAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Записати аудіо" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/showFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.00"
+            android:onClick="onClick"
+            android:text="Переглянути фото" />
+
+        <Button
+            android:id="@+id/makeFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Зфотографувати" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Видалити все" />
+
+        <Button
+            android:id="@+id/clear_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Очистити відповідь" />
+
+    </LinearLayout>
+
+</LinearLayout>

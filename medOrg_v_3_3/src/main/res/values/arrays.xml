@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tnm_t_array">
+    <item>TX</item>
+        <item>TX</item>
+        <item>TO</item>
+        <item>Tis</item>
+        <item>T1 mi</item>
+        <item>T1 a</item>
+        <item>T1 b</item>
+        <item>T1 c</item>
+        <item>T2</item>
+        <item>T3</item>
+        <item>T4 a</item>
+        <item>T4 b</item>
+        <item>T4 c</item>
+        <item>T4 d</item>
+    </string-array>
+    <string-array name="tnm_n_array">
+        <item>NX</item>
+        <item>NO mi+</item>
+        <item>NO mol+</item>
+        <item>N1 mi</item>
+        <item>N1 a</item>
+        <item>N1 b</item>
+        <item>N1 c</item>
+        <item>N2 a</item>
+        <item>N2 b</item>
+        <item>N3 a</item>
+        <item>N3 b</item>
+        <item>N3 c</item>
+    </string-array>
+    <string-array name="tnm_m_array">
+        <item>MO</item>
+        <item>cM(i+)</item>
+        <item>M2</item>
+    </string-array>
+</resources>

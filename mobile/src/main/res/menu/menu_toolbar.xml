@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ditsystems.com.zinger.activities.WaterBalanceActivity">
+
+    <item
+        android:id="@+id/action_consult"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Consult"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_sos"
+        android:icon="@mipmap/ic_launcher"
+        android:title="SOS"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_market"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Market"
+        app:showAsAction="ifRoom"/>
+
+</menu>

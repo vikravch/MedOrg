@@ -1,0 +1,97 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    
+    <style name="chekTV_rmz"> 
+        <item name="android:checkMark">@drawable/btn_check_rmz</item> 
+    </style>
+    
+    <style name="RMZ_Button" parent="android:Widget.Button"> 
+        <item name="android:background">@drawable/btn_rmz</item> 
+        <item name="android:focusable">true</item> 
+        <item name="android:clickable">true</item> 
+        <item name="android:textAppearance">?android:attr/textAppearanceSmallInverse</item> 
+        <item name="android:textColor">@android:color/primary_text_light</item>
+        <item name="android:padding">@dimen/activity_padding</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textSize">@dimen/text_size_button_default</item>
+	</style>
+
+    <style name="RMZ_TextViewTitle">
+        <item name="android:background">@color/white_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">@color/text_shadow_color</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textSize">@dimen/text_size_title</item>
+    </style>
+
+    <style name="RMZ_TextViewSimpleText">
+        <item name="android:layout_marginLeft">@dimen/margin_null</item>
+        <item name="android:layout_marginRight">@dimen/margin_null</item>
+        <item name="android:layout_marginTop">@dimen/margin_null</item>
+        <item name="android:background">@color/white_background</item>
+        <item name="android:padding">@dimen/padding_simple_text</item>
+    </style>
+    <style name="RMZ_EditText">
+        <item name="android:background">@drawable/textfield_rmz</item>
+        <item name="android:textSelectHandleLeft">@drawable/text_select_handle_left</item> 
+        <item name="android:textSelectHandleRight">@drawable/text_select_handle_right</item> 
+        <item name="android:textSelectHandle">@drawable/text_select_handle_middle</item>
+    </style>
+
+    <style name="RMZ_InnerButtonLinear">
+        <item name="android:layout_marginBottom">220dp</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:layout_marginTop">25dp</item>
+
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="RMZ" parent="android:Theme.Light">
+				<item name="android:windowNoTitle">true</item>
+                <item name="android:textViewStyle">@android:color/black</item>
+                <item name="android:listViewStyle">@android:style/Theme</item>
+                <item name="android:buttonStyle">@style/RMZ_Button</item>
+    </style>
+
+    <style name="RMZ_ListSimple">
+        <item name="android:layout_margin">@dimen/list_simple_margin</item>
+        <item name="android:divider">@drawable/dialog_divider_horizontal_pink</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+    </style>
+    <!-- Без  "parent" -->
+    <!-- Стандартные темы можно посмотреть:
+      https://android.googlesource.com/platform/frameworks/base/+/refs/heads/master/core/res/res/values/themes.xml" 
+      
+      Стандартные стили можно посмотреть:
+      https://android.googlesource.com/platform/frameworks/base/+/refs/heads/master/core/res/res/values/styles.xml
+      -->
+    <style name="RMZ_" >
+				<item name="android:windowNoTitle">true</item>
+                <item name="android:windowBackground">@drawable/background_02</item>
+    </style>
+
+    <dimen name="text_shadow_radius">1dp</dimen>
+    <dimen name="text_size_title">30sp</dimen>
+    <dimen name="margin_null">0dp</dimen>
+    <dimen name="padding_simple_text">5dp</dimen>
+    <dimen name="text_size_button_default">25sp</dimen>
+    <dimen name="list_simple_margin">5dp</dimen>
+</resources>
