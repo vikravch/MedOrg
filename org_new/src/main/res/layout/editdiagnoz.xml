@@ -1,34 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/history_center"
+    android:padding="20dp">
 
     <EditText
         android:id="@+id/editQuest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="4"
         android:enabled="true"
-        android:focusable="false"
         android:inputType="textMultiLine"
-        android:minLines="2"
-        android:onClick="onClick"
+        android:minLines="4"
         android:scrollbars="vertical"
-        android:text="Запитання"
         android:textSize="25sp" 
         android:gravity="top|left">
 
         <requestFocus />
     </EditText>
-
-    <Button
-        android:id="@+id/saveAnsw"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:onClick="onClick"
-        android:text="Зберегти тексти" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,6 +27,38 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:layout_weight="1" >
+
+    <Button
+        android:id="@+id/saveAnsw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onClick"
+        android:text="Зберегти"
+        android:padding="20dp"
+        android:textStyle="bold"
+        style="@style/RMZ_Button"/>
+
+        <Button
+            android:id="@+id/clearAnswerEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Очистити"
+            android:padding="20dp"
+            android:textStyle="bold"
+            style="@style/RMZ_Button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:visibility="gone">
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -65,7 +87,8 @@
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_weight="1" >
+        android:layout_weight="1"
+        android:visibility="gone">
 
         <ImageButton
             android:id="@+id/imageButton4"

@@ -1,8 +1,13 @@
 package ua.com.kistudio.medorg_v2.ui.activity;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
 
 import ua.com.kistudio.medorg_v2.R;
@@ -10,15 +15,36 @@ import ua.com.kistudio.medorg_v2.R;
 /**
  * Created by Android on 25.05.2016.
  */
-public class DiagnozShowActivity extends AppCompatActivity {
+public class DiagnozShowActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.diagnoz_show_layout);
         TextView tvRes = (TextView) findViewById(R.id.tvDiagnozShowActivity);
+        findViewById(R.id.btnSendDiagnozShow).setOnClickListener(this);
 
+        tvRes.setText(compliteText());
+    }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btnSendDiagnozShow:
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+                String email = sharedPreferences.getString(ProfileActivity.MAIL,"");
+                intent.putExtra(Intent.EXTRA_EMAIL, email);
+                intent.putExtra(Intent.EXTRA_SUBJECT,"Test");
+                intent.setData(Uri.parse("mailto:doctor@ukr.net"));
+                intent.putExtra(Intent.EXTRA_TEXT,compliteText());
+                startActivity(Intent.createChooser(intent,"Email"));
+                break;
+        }
+    }
+
+    private String compliteText() {
         StringBuffer stringBuffer = new StringBuffer();
 
         String[] questArray = getResources().getStringArray(R.array.diagnoz_question);
@@ -68,9 +94,9 @@ public class DiagnozShowActivity extends AppCompatActivity {
                 } catch (IndexOutOfBoundsException ex){
                     stringBuffer.append(questArray[i]+"\n  "+resArray[i+2]+"\n ");
                 }
-                }
+            }
         }
-
-        tvRes.setText(stringBuffer.toString());
+        return stringBuffer.toString();
     }
+
 }

@@ -30,7 +30,9 @@
         <item name="android:textColor">@android:color/primary_text_light</item>
         <item name="android:padding">@dimen/activity_padding</item>
         <item name="android:minHeight">48dp</item>
-        <item name="android:textSize">@dimen/text_size_button_default</item>
+        <item name="android:textSize">18dp</item>
+
+
 	</style>
 
     <style name="RMZ_TextViewTitle">

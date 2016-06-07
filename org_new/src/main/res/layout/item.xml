@@ -36,7 +36,58 @@
                 android:id="@+id/radioGroupHorizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation='horizontal'></RadioGroup>
+                android:orientation='horizontal'
+                android:visibility="gone">
+                <RadioButton
+                    android:id="@+id/radio21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="1"
+                    style="@style/RMZ_SimpleTextWithShadow"
+                    android:orientation="vertical" />
+
+                <RadioButton
+                android:id="@+id/radio22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/RMZ_SimpleTextWithShadow"
+                android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/radio23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/RMZ_SimpleTextWithShadow"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/radio24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/RMZ_SimpleTextWithShadow"
+                    android:text="4" />
+                <RadioButton
+                    android:id="@+id/radio25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/RMZ_SimpleTextWithShadow"
+                    android:text="5" />
+
+                <RadioButton
+                    android:id="@+id/radio26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/RMZ_SimpleTextWithShadow"
+                    android:text="6" />
+
+                <RadioButton
+                    android:id="@+id/radio27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/RMZ_SimpleTextWithShadow"
+                    android:text="7" />
+            </RadioGroup>
 
 <RadioGroup
         android:id="@+id/radioGroup2"

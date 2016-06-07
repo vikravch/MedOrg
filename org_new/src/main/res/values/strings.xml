@@ -51,5 +51,7 @@
     <string name="hint_edit_text_diagnoz">Введіть</string>
     <string name="pruzn_toast_text">Оберіть призначення</string>
     <string name="pruzn_empty_text">Призначень немає</string>
+    <string name="send_button">Надіслати</string>
+    <string name="show_history_button">Список</string>
 
 </resources>

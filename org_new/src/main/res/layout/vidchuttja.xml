@@ -6,6 +6,40 @@
     android:orientation="vertical"
     android:paddingLeft="20dp"
     android:paddingRight="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:onClick="showResult"
+            android:text="@string/box"
+            style="@style/RMZ_Button"
+            android:padding="20dp"
+            android:textStyle="bold">
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:onClick="showResult"
+            android:id="@+id/btnShowListVidchuttja"
+            android:text="@string/show_history_button"
+            style="@style/RMZ_Button"
+            android:padding="20dp"
+            android:textStyle="bold">
+        </Button>
+
+    </LinearLayout>
     
  
     <ListView
@@ -16,13 +50,6 @@
         style="@style/RMZ_SimpleTextWithShadow">
     </ListView>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:onClick="showResult"
-        android:text="@string/box" >
-    </Button>
+
 
 </LinearLayout>

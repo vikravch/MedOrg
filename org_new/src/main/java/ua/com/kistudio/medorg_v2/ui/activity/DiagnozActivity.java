@@ -15,7 +15,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.lang.reflect.Array;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 import ua.com.kistudio.medorg_v2.ui.fragments.DiagnozQuestionsFirstFragment;
 import ua.com.kistudio.medorg_v2.ui.fragments.DiagnozQuestionsSecondFragment;
@@ -86,9 +89,15 @@ public class DiagnozActivity extends AppCompatActivity implements View.OnClickLi
                 ContentValues cv = new ContentValues();
                 cv.put(Params.OPROS_TYPE,"o");
 
-                
 
-                cv.put(Params.OPROS_DATE,"12.12.2012");
+
+                Calendar calendar = new GregorianCalendar();
+                calendar = Calendar.getInstance();
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm");
+                String day = simpleDateFormat.format(calendar.getTime());
+
+                cv.put(Params.OPROS_DATE,day);
+
 
 
                 SharedPreferences sp = getSharedPreferences(Params.PREFERENCE_NAME, Context.MODE_PRIVATE);

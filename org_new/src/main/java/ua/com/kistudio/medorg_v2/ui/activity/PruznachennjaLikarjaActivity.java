@@ -71,14 +71,14 @@ public class PruznachennjaLikarjaActivity extends BaseActivity implements OnClic
 			lvOut.setAdapter(cursorAdapter);
 			lvOut.setOnItemClickListener(this);
 
-			Toast.makeText(this,getResources().getString(R.string.pruzn_toast_text), Toast.LENGTH_LONG).show();
+			Toast.makeText(this,getResources().getString(R.string.pruzn_toast_text), Toast.LENGTH_SHORT).show();
 		} catch (CursorIndexOutOfBoundsException e) {
-			Toast.makeText(this, getResources().getString(R.string.pruzn_empty_text), Toast.LENGTH_LONG).show();
+			Toast.makeText(this, getResources().getString(R.string.pruzn_empty_text), Toast.LENGTH_SHORT).show();
 		}
 		// Имена файлов
 
 
-		Toast.makeText(this, "Оберіть призначення зі списку", Toast.LENGTH_LONG).show();
+		//Toast.makeText(this, "Оберіть призначення зі списку", Toast.LENGTH_SHORT).show();
 	}
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -87,7 +87,7 @@ public class PruznachennjaLikarjaActivity extends BaseActivity implements OnClic
 		 switch (view.getId())
 			{
 			case R.id.new_diag:
-				Intent intent1 = new Intent(this, NewPruznActivity.class);
+				Intent intent1 = new Intent(this, EditPruznachennjaActivity.class);
 				startActivity(intent1);
 			break;	
 			}

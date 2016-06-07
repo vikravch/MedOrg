@@ -39,40 +39,32 @@ public class ActivityMain extends BaseActivity implements OnClickListener {
 	
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
 		
 		switch (v.getId()) {
 				
 			case R.id.iBtnGuide: 
 				//startActivity(new Intent(ActivityMain.this, Guide_contents.class));
+				//TODO Add Guide activity
 				break;
 			case R.id.iBtnHistory: 
 				startActivity(new Intent(ActivityMain.this, HistoryActivity.class));
 				break;
 			case R.id.iBtnQuestion: 
-				startActivity(new Intent(ActivityMain.this, QuestionsToDoctorActivity.class));
+				//startActivity(new Intent(ActivityMain.this, QuestionsToDoctorActivity.class));
+				//TODO Add Question to doctor activity
 				break;
 			case R.id.iBtnDoctor: 
 				startActivity(new Intent(ActivityMain.this, DoctorActivity.class));
 				break;
 			case R.id.iBtnHelp: 
 				//startActivity(new Intent(ActivityMain.this, Reference.class));
+				//TODO Add Help activity
 				break;
 			case R.id.iBtnInfo: 
 				startActivity(new Intent(ActivityMain.this, InfoActivity.class));
 				break;
 		}
 	}
-
-@Override
-public boolean onCreateOptionsMenu(Menu menu) {
-	// Inflate the menu; this adds items to the action bar if it is present.
-	/*
-	 * getMenuInflater().inflate(R.menu.main, menu); return true;
-	 */
-
-	return super.onCreateOptionsMenu(menu);
-}
 
 
 }

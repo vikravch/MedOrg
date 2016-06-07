@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -59,33 +60,134 @@ public class BoxAdapter extends BaseAdapter {
       view = lInflater.inflate(R.layout.item, parent, false);
     }
 
-      if ((position==28)||(position==29)){
-          RadioGroup radGrp = (RadioGroup) view.findViewById(R.id.radioGroup2);
+      Product p = getProduct(position);
 
+      // заполняем View в пункте списка данными из товаров: наименование, цена
+      // и картинка
+      ((TextView) view.findViewById(R.id.tvDescr)).setText(p.name);
+      ((TextView) view.findViewById(R.id.tvPrice)).setText(p.question);
+
+      RadioGroup radGrp = (RadioGroup) view.findViewById(R.id.radioGroup2);
+      int checkedRadioButtonID = radGrp.getCheckedRadioButtonId();
+      radGrp.setTag(position);
+
+      if ((position==28)||(position==29)){
+          radGrp.setVisibility(View.GONE);
+          ((RadioGroup) view.findViewById(R.id.radioGroupHorizontal)).setVisibility(View.VISIBLE);
+          ((RadioGroup) view.findViewById(R.id.radioGroupHorizontal)).setTag(position);
+          ((RadioGroup) view.findViewById(R.id.radioGroupHorizontal)).setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+              public void onCheckedChanged(RadioGroup arg0, int id) {
+                  int k1=0;
+                  switch (id) {
+                      case -1:
+                          Log.v("LogStr", "Choices cleared!");
+                          break;
+                      case R.id.radio21:
+                          k1=1;
+                          break;
+                      case R.id.radio22:
+                          k1=2;
+                          break;
+                      case R.id.radio23:
+                          k1=3;
+                          break;
+                      case R.id.radio24:
+                          k1=4;
+                          break;
+                      case R.id.radio25:
+                          k1=5;
+                          break;
+                      case R.id.radio26:
+                          k1=6;
+                          break;
+                      case R.id.radio27:
+                          k1=7;
+                          break;
+
+                      default:
+                          k1=0;
+                          break;
+                  }
+                  int tag = (int) arg0.getTag();
+                  getProduct(tag).number = k1;
+                  Log.v("LogStr", "Id = "+arg0.getTag()+" k1= "+k1);
+              }
+          });
+          switch (p.number){
+              case 1:
+                  ((RadioButton) view.findViewById(R.id.radio21)).setChecked(true);
+                  ((RadioButton) view.findViewById(R.id.radio22)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio23)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio24)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio25)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio26)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio27)).setChecked(false);
+                  break;
+              case 2:
+                  ((RadioButton) view.findViewById(R.id.radio21)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio22)).setChecked(true);
+                  ((RadioButton) view.findViewById(R.id.radio23)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio24)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio25)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio26)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio27)).setChecked(false);
+                  break;
+              case 3:
+                  ((RadioButton) view.findViewById(R.id.radio21)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio22)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio23)).setChecked(true);
+                  ((RadioButton) view.findViewById(R.id.radio24)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio25)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio26)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio27)).setChecked(false);
+                  break;
+              case 4:
+                  ((RadioButton) view.findViewById(R.id.radio21)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio22)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio23)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio24)).setChecked(true);
+                  ((RadioButton) view.findViewById(R.id.radio25)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio26)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio27)).setChecked(false);
+                  break;
+              case 5:
+                  ((RadioButton) view.findViewById(R.id.radio21)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio22)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio23)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio24)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio25)).setChecked(true);
+                  ((RadioButton) view.findViewById(R.id.radio26)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio27)).setChecked(false);
+                  break;
+              case 6:
+                  ((RadioButton) view.findViewById(R.id.radio21)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio22)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio23)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio24)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio25)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio26)).setChecked(true);
+                  ((RadioButton) view.findViewById(R.id.radio27)).setChecked(false);
+                  break;
+              case 7:
+                  ((RadioButton) view.findViewById(R.id.radio21)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio22)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio23)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio24)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio25)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio26)).setChecked(false);
+                  ((RadioButton) view.findViewById(R.id.radio27)).setChecked(true);
+                  break;
+          }
+
+      } else{
+          radGrp.setVisibility(View.VISIBLE);
+          ((RadioGroup) view.findViewById(R.id.radioGroupHorizontal)).setVisibility(View.GONE);
       }
 
-    Product p = getProduct(position);
-
-    // заполняем View в пункте списка данными из товаров: наименование, цена
-    // и картинка
-    ((TextView) view.findViewById(R.id.tvDescr)).setText(p.name);
-    ((TextView) view.findViewById(R.id.tvPrice)).setText(p.question);
-    /*((TextView) view.findViewById(R.id.tvPrice)).setText(p.price + "");
-    ((ImageView) view.findViewById(R.id.ivImage)).setImageResource(p.image);*/
-
-    /*CheckBox cbBuy = (CheckBox) view.findViewById(R.id.cbBox);
-    // присваиваем чекбоксу обработчик
-    cbBuy.setOnCheckedChangeListener(myCheckChangList);
-    // пишем позицию
-    cbBuy.setTag(position);
-    // заполняем данными из товаров: в корзине или нет
-    cbBuy.setChecked(p.box);*/
    
     
     
-    RadioGroup radGrp = (RadioGroup) view.findViewById(R.id.radioGroup2);
-    int checkedRadioButtonID = radGrp.getCheckedRadioButtonId();
-    radGrp.setTag(position);
+
     
     radGrp.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
       public void onCheckedChanged(RadioGroup arg0, int id) {

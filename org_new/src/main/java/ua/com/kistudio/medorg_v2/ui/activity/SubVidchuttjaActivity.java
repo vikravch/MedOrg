@@ -1,7 +1,10 @@
 package ua.com.kistudio.medorg_v2.ui.activity;
 
 import android.app.Activity;
+import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -14,8 +17,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
+import ua.com.kistudio.medorg_v2.util.Params;
 import ua.com.kistudio.medorg_v2.util.Product;
 import ua.com.kistudio.medorg_v2.R;
 import ua.com.kistudio.medorg_v2.model.BoxAdapter;
@@ -91,19 +98,45 @@ public class SubVidchuttjaActivity extends AppCompatActivity {
 
   // выводим информацию о корзине
   public void showResult(View v) {
+      String jsonRes = "";
     String result = "Результати опитування:";
     int i = 1;
     for (Product p : boxAdapter.getBox()) {
     	
       /*if (p.box)
         result += "\n" + p.name;*/
+        jsonRes+=p.number+";";
       result+="\n номер запитання: " + i +" відповідь= "+ p.number;
       i++;
     }
     //Toast.makeText(this, result, Toast.LENGTH_LONG).show();
-    filePath = DATA_STOR + "/" + DATA_DIR;
-    filePath = DATA_DIR;
-    writeFile(filePath,"2.txt",result);
+    /*filePath = DATA_STOR + "/" + DATA_DIR;
+    filePath = DATA_DIR;*/
+      Log.d(Params.LOG_TAG,"res - "+jsonRes);
+
+      ContentValues cv = new ContentValues();
+      cv.put(Params.OPROS_TYPE,"v");
+
+
+
+      Calendar calendar = new GregorianCalendar();
+      calendar = Calendar.getInstance();
+      SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy HH:mm");
+      String day = simpleDateFormat.format(calendar.getTime());
+
+      cv.put(Params.OPROS_DATE,day);
+
+
+
+      SharedPreferences sp = getSharedPreferences(Params.PREFERENCE_NAME, Context.MODE_PRIVATE);
+      String name=sp.getString(ProfileActivity.PIB, "");
+      cv.put(Params.OPROS_WHO,name);
+
+
+      cv.put(Params.OPROS_RESULT, jsonRes);
+      getContentResolver().insert(Params.OPROS_URI, cv);
+
+    //writeFile(filePath,"2.txt",result);
     Toast.makeText(this, "Збережено", Toast.LENGTH_LONG).show();
   }
   

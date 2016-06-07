@@ -3,11 +3,31 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:background="@drawable/history_center"
         android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnSendDiagnozShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/RMZ_Button"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:text="@string/send_button"/>
+
+    </LinearLayout>
+
+
 
     <TextView
         android:id="@+id/tvDiagnozShowActivity"

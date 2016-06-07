@@ -67,7 +67,9 @@ public class EditPruznachennjaActivity extends BaseActivity {
 
 		Cursor c = getContentResolver().query(Params.CONTENT_URI_PRUZN,null,"_id=="+id,null,null);
 		c.moveToFirst();
-		quest.setText(c.getString(c.getColumnIndex(Params.PRUZN_TEXT)));
+		if (c.getCount()!=0){
+			quest.setText(c.getString(c.getColumnIndex(Params.PRUZN_TEXT)));
+		}
 	}
 	
 /////////////////////////////////////////////////////////////////////////////////////
@@ -79,7 +81,7 @@ public class EditPruznachennjaActivity extends BaseActivity {
 		{
 			switch (view.getId())
 			{
-				case R.id.clear_answer:
+				case R.id.clearAnswerEdit:
 					quest.setText("");
 					newAnsw = "";
 					break;		
@@ -88,8 +90,13 @@ public class EditPruznachennjaActivity extends BaseActivity {
 					question = quest.getText().toString();
 					ContentValues contentValues = new ContentValues();
 					contentValues.put(Params.PRUZN_TEXT,question);
-					getContentResolver().update(Params.CONTENT_URI_PRUZN,contentValues,"_id=="+id,null);
+					if (id==null){
+						getContentResolver().insert(Params.CONTENT_URI_PRUZN,contentValues);
+					} else {
+						getContentResolver().update(Params.CONTENT_URI_PRUZN,contentValues,"_id="+id,null);
+					}
 					Toast.makeText(EditPruznachennjaActivity.this, "Збережено", Toast.LENGTH_LONG).show();
+					finish();
 					
 					break;
 				case R.id.makeAudio:
@@ -125,9 +132,9 @@ public class EditPruznachennjaActivity extends BaseActivity {
 					}
 					break;
 				case R.id.editQuest:
-					Toast.makeText(EditPruznachennjaActivity.this, "Введіть текст запитання", Toast.LENGTH_LONG).show();
+					//Toast.makeText(EditPruznachennjaActivity.this, "Введіть текст запитання", Toast.LENGTH_LONG).show();
 					
-					/*AlertDialog.Builder*/ alert = new AlertDialog.Builder(EditPruznachennjaActivity.this);
+					/*AlertDialog.Builder*//* alert = new AlertDialog.Builder(EditPruznachennjaActivity.this);
 					alert.setTitle("Введіть запитання");
 					alert.setMessage("Старий варіант: " + question);
 					// Добавим поле ввода
@@ -148,7 +155,7 @@ public class EditPruznachennjaActivity extends BaseActivity {
 						  }
 						});
 
-						alert.show();
+						alert.show();*/
 					
 					break;
 				case R.id.editAnsw:

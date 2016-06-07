@@ -37,9 +37,11 @@
         <activity android:name=".ui.activity.YourQuestNewActivity" />
         <activity android:name=".ui.activity.YourQuestEditActivity" />
         <activity android:name=".ui.activity.HistoryActivity" />
-        <activity android:name=".ui.activity.PruznachennjaLikarjaActivity" />
+        <activity android:name=".ui.activity.PruznachennjaLikarjaActivity"
+            />
         <activity android:name=".ui.activity.NewPruznActivity" />
-        <activity android:name=".ui.activity.EditPruznachennjaActivity" />
+        <activity android:name=".ui.activity.EditPruznachennjaActivity"
+            android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".ui.activity.ProfileActivity" />
         <activity android:name=".ui.activity.EORTCActivity" />
         <activity android:name=".ui.activity.SubVidchuttjaActivity" />
