@@ -134,11 +134,17 @@ public class SubVidchuttjaActivity extends AppCompatActivity {
 
 
       cv.put(Params.OPROS_RESULT, jsonRes);
+      Log.d(Params.LOG_TAG,cv.toString());
       getContentResolver().insert(Params.OPROS_URI, cv);
 
     //writeFile(filePath,"2.txt",result);
     Toast.makeText(this, "Збережено", Toast.LENGTH_LONG).show();
   }
+
+    public void showList(View v) {
+        startActivity(new Intent(this,ListSubVidchuttiaActivity.class));
+
+    }
   
   public void writeFile(String Path, String File_name, String Content) {
 		//File f1 = new File( Path + "/" + File_name + ".txt" );

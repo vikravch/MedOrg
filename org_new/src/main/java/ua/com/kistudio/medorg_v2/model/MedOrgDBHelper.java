@@ -20,6 +20,7 @@ public class MedOrgDBHelper extends SQLiteOpenHelper {
             phone - phone number
             foto - path to photo of doctor
             audio - path to audio
+            mail - email
         Table questions:
             id - question id
             value - text of question
@@ -36,9 +37,9 @@ public class MedOrgDBHelper extends SQLiteOpenHelper {
      */
 
     private static final String CREATE_TABLE_DOCTOR = "CREATE TABLE doctor (_id integer primary key autoincrement," +
-            String.format(" %s text, %s text, %s text, %s text, %s text, %s text);"
+            String.format(" %s text, %s text, %s text, %s text, %s text, %s text, %s text);"
                     , Params.DOCTOR_PIB, Params.DOCTOR_SPEC, Params.DOCTOR_ABOUT,
-                    Params.DOCTOR_PHONE, Params.DOCTOR_PHOTO, Params.DOCTOR_AUDIO);
+                    Params.DOCTOR_PHONE, Params.DOCTOR_PHOTO, Params.DOCTOR_AUDIO, Params.DOCTOR_MAIL);
 
     private static final String CREATE_TABLE_QUESTIONS = "CREATE TABLE questions (_id integer primary key autoincrement,"+
             String.format("%s text, %s text);",Params.QUESTION_TEXT,Params.QUESTION_ANSWER);

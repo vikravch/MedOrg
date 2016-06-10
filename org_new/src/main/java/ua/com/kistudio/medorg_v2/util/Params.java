@@ -52,6 +52,7 @@ public class Params {
     public static final String DOCTOR_PHONE = "telephone";
     public static final String DOCTOR_PHOTO = "photo";
     public static final String DOCTOR_AUDIO = "audio";
+    public static final String DOCTOR_MAIL = "mail";
 
     // table questions in DB
     public static final String QUESTION_TABLE_NAME = "questions";
@@ -73,7 +74,6 @@ public class Params {
 
 
     public static final int NUM_OF_QUESTIONS_DIAGNOZ = 16;
-
 
 
 

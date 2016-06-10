@@ -40,6 +40,7 @@ public class EditDoctorActivity extends Activity {
 	EditText spec;
 	EditText about;
 	EditText tel;
+	EditText mail;
 	
 	
 	String file_Name;
@@ -49,6 +50,7 @@ public class EditDoctorActivity extends Activity {
 	String special;
 	String telephone;
 	String aboutl;
+	String maild;
 	String file_Name_Answ;
 	String file_Name_Audio;
 	String file_Name_Foto;
@@ -81,12 +83,14 @@ public class EditDoctorActivity extends Activity {
         //insertDoctor("1111","1111","1111","1111");
 
         Intent intent = getIntent();
+
 		
-		file_Name = intent.getStringExtra("file_name");
+		/*file_Name = intent.getStringExtra("file_name");
 	    question = intent.getStringExtra("quest");
-	    file_Path = intent.getStringExtra("path");
+	    file_Path = intent.getStringExtra("path");*/
         mId = intent.getStringExtra("id");
-	    file_Name_Answ = file_Name.replaceAll(".dct", ".dct");
+		initViews();
+	   /* file_Name_Answ = file_Name.replaceAll(".dct", ".dct");
 	    file_Name_Audio = file_Name.replaceAll(".dct", ".3gpp");
 	    file_Name_Foto = file_Name.replaceAll(".dct", ".jpg");
 	    file_Name_spec = file_Name.replaceAll(".dct", ".spc");
@@ -112,7 +116,7 @@ public class EditDoctorActivity extends Activity {
 	    
 	    newAnsw = "";
 
-		Log.d(Params.LOG_TAG, "Created");
+		Log.d(Params.LOG_TAG, "Created");*/
 	}
 
     private void insertDoctor(String pib, String spec, String about, String phone) {
@@ -124,49 +128,54 @@ public class EditDoctorActivity extends Activity {
         this.getContentResolver().insert(Params.CONTENT_URI_DOCTOR, contentValues);
     }
 
-    private void initViews(String[] s, String question) {
+    private void initViews() {
 		quest = (EditText) findViewById(R.id.editQuest);
 		spec = (EditText) findViewById(R.id.EditSpec);
 		about = (EditText) findViewById(R.id.EditAbout);
 		tel = (EditText) findViewById(R.id.EditTel);
 		answ = (EditText) findViewById(R.id.editAnsw);
+		mail = (EditText) findViewById(R.id.EditEmail);
 
-        Cursor c =getContentResolver().query(Params.CONTENT_URI_DOCTOR, null, "_id=="+mId, null, null);
+		if (!mId.equals("-1")) {
+			Cursor c = getContentResolver().query(Params.CONTENT_URI_DOCTOR, null, "_id==" + mId, null, null);
 
 
-        c.moveToFirst();
+			c.moveToFirst();
 
-		if (c.getString(c.getColumnIndex(Params.DOCTOR_PIB))!=null)
-        	quest.setText(c.getString(c.getColumnIndex(Params.DOCTOR_PIB)));
+			if (c.getString(c.getColumnIndex(Params.DOCTOR_PIB)) != null)
+				quest.setText(c.getString(c.getColumnIndex(Params.DOCTOR_PIB)));
 
-		if (c.getString(c.getColumnIndex(Params.DOCTOR_SPEC))!=null)
-        	spec.setText(c.getString(c.getColumnIndex(Params.DOCTOR_SPEC)));
+			if (c.getString(c.getColumnIndex(Params.DOCTOR_SPEC)) != null)
+				spec.setText(c.getString(c.getColumnIndex(Params.DOCTOR_SPEC)));
 
-		if (c.getString(c.getColumnIndex(Params.DOCTOR_ABOUT))!=null)
-        	about.setText(c.getString(c.getColumnIndex(Params.DOCTOR_ABOUT)));
+			if (c.getString(c.getColumnIndex(Params.DOCTOR_ABOUT)) != null)
+				about.setText(c.getString(c.getColumnIndex(Params.DOCTOR_ABOUT)));
 
-		if (c.getString(c.getColumnIndex(Params.DOCTOR_PHONE))!=null)
-	        tel.setText(c.getString(c.getColumnIndex(Params.DOCTOR_PHONE)));
-/*
+			if (c.getString(c.getColumnIndex(Params.DOCTOR_PHONE)) != null)
+				tel.setText(c.getString(c.getColumnIndex(Params.DOCTOR_PHONE)));
 
-        do{
+			if (c.getString(c.getColumnIndex(Params.DOCTOR_MAIL)) != null)
+				tel.setText(c.getString(c.getColumnIndex(Params.DOCTOR_MAIL)));
+
+
+        /*do{
             Log.d(Params.LOG_TAG, String.format("id - %s , pib - %s , spec - %s , about - %s , phone - %s",
                     c.getInt(c.getColumnIndex("_id")),
                     c.getString(c.getColumnIndex(Params.DOCTOR_PIB)),
                     c.getString(c.getColumnIndex(Params.DOCTOR_SPEC)),
                     c.getString(c.getColumnIndex(Params.DOCTOR_ABOUT)),
-                    c.getString(c.getColumnIndex(Params.DOCTOR_PHONE))
+                    c.getString(c.getColumnIndex(Params.DOCTOR_PHONE)),
+					c.getString(c.getColumnIndex(Params.DOCTOR_MAIL))
             ));
-        } while (c.moveToNext());
-*/
+        } while (c.moveToNext());*/
 
-/*
-        quest.setText(c.getString(c.getColumnIndex(Params.DOCTOR_PIB)));
-        spec.setText(c.getString(c.getColumnIndex(Params.DOCTOR_SPEC)));
-        about.setText(c.getString(c.getColumnIndex(Params.DOCTOR_ABOUT)));
-        tel.setText(c.getString(c.getColumnIndex(Params.DOCTOR_PHONE)));
-*/
 
+			quest.setText(c.getString(c.getColumnIndex(Params.DOCTOR_PIB)));
+			spec.setText(c.getString(c.getColumnIndex(Params.DOCTOR_SPEC)));
+			about.setText(c.getString(c.getColumnIndex(Params.DOCTOR_ABOUT)));
+			tel.setText(c.getString(c.getColumnIndex(Params.DOCTOR_PHONE)));
+			mail.setText(c.getString(c.getColumnIndex(Params.DOCTOR_MAIL)));
+		}
         /*if (s[0]!=""){quest.setText(s[0]);}
         if (s.length>1) {spec.setText(s[1]);}
         if (s.length>1) {about.setText(s[2]);}
@@ -193,7 +202,8 @@ public class EditDoctorActivity extends Activity {
 		      		question = quest.getText().toString();
 		      		special = spec.getText().toString();
 		      		aboutl = about.getText().toString();
-		      		telephone = tel.getText().toString();
+					telephone = tel.getText().toString();
+					maild = mail.getText().toString();
 		      		/*
 		      		String out = question+ "#" + special + "#" + aboutl +"#" + telephone;
 		      		writeFile(file_Path, file_Name, out);
@@ -204,7 +214,12 @@ public class EditDoctorActivity extends Activity {
                     contentValues.put(Params.DOCTOR_SPEC,special);
                     contentValues.put(Params.DOCTOR_ABOUT,aboutl);
                     contentValues.put(Params.DOCTOR_PHONE,telephone);
-                    this.getContentResolver().update(Params.CONTENT_URI_DOCTOR, contentValues, "_id=="+mId, null);
+					contentValues.put(Params.DOCTOR_MAIL,maild);
+					if (!mId.equals("-1")) {
+						this.getContentResolver().update(Params.CONTENT_URI_DOCTOR, contentValues, "_id==" + mId, null);
+					} else {
+						this.getContentResolver().insert(Params.CONTENT_URI_DOCTOR,contentValues);
+					}
 
                     break;
 				case R.id.makeAudio:
@@ -225,7 +240,7 @@ public class EditDoctorActivity extends Activity {
 						
 					break;
 				case R.id.listenAudio:
-					btnAudio = (Button) findViewById(R.id.imageButton2);
+					/*btnAudio = (Button) findViewById(R.id.imageButton2);
 					if ( btnAudio.getText().toString().equals("СТОП") )
 					{
 						in1.playStop(view);
@@ -237,7 +252,7 @@ public class EditDoctorActivity extends Activity {
 						in1.playStart(view, file_Path, file_Name_Audio, EditDoctorActivity.this);
 						btnAudio.setText("СТОП");
 						btnAudio.setBackgroundResource(R.drawable.btn_stop);
-					}
+					}*/
 					break;
 				case R.id.makeFoto:
 					Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);

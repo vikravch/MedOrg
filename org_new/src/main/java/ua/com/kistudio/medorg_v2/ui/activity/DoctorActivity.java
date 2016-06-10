@@ -73,12 +73,14 @@ public class DoctorActivity extends Activity implements OnClickListener, Adapter
 			Toast.makeText(this, getResources().getString(R.string.doctor_empty_text), Toast.LENGTH_LONG).show();
 		}
 	}
+
 	@Override
 	public void onClick(View arg0) {
 		switch (arg0.getId())
 		{
 		case R.id.new_diag:
-			Intent intent1 = new Intent(this, NewDoctorActivity.class);
+			Intent intent1 = new Intent(this, EditDoctorActivity.class);
+			intent1.putExtra("id","-1");
 			startActivity(intent1);
 		break;	
 		}

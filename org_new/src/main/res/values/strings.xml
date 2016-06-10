@@ -53,5 +53,6 @@
     <string name="pruzn_empty_text">Призначень немає</string>
     <string name="send_button">Надіслати</string>
     <string name="show_history_button">Список</string>
+    <string name="choose_doctor_text">Оберіть лікаря</string>
 
 </resources>

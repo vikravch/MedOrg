@@ -236,6 +236,12 @@
         <item>G2 - Помірнодиференційованою</item>
         <item>G3 - Низькодиференційованою</item>
     </string-array>
+    <string-array name="qs_ans_first" >
+        <item>Зовсім ні</item>
+        <item>Трохи</item>
+        <item>Значною мірою</item>
+        <item>Дуже</item>
+    </string-array>
 
 
 </resources>

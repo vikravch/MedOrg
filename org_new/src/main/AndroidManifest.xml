@@ -33,7 +33,8 @@
         <activity android:name=".ui.activity.YourQuestionsActivity" />
         <activity android:name=".ui.activity.DoctorActivity" />
         <activity android:name=".ui.activity.NewDoctorActivity" />
-        <activity android:name=".ui.activity.EditDoctorActivity" />
+        <activity android:name=".ui.activity.EditDoctorActivity"
+            android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".ui.activity.YourQuestNewActivity" />
         <activity android:name=".ui.activity.YourQuestEditActivity" />
         <activity android:name=".ui.activity.HistoryActivity" />
@@ -48,6 +49,9 @@
         <activity android:name=".ui.activity.DiagnozActivity"/>
         <activity android:name=".ui.activity.Reference"/>
         <activity android:name=".ui.activity.DiagnozShowActivity"/>
+        <activity android:name=".ui.activity.ListSubVidchuttiaActivity"/>
+        <activity android:name=".ui.activity.DetailSubVidchuttiaActivity"/>
+
         <provider
             android:name=".model.MedOrgContentProvider"
             android:authorities="ua.com.kistudio.ContentProvider"

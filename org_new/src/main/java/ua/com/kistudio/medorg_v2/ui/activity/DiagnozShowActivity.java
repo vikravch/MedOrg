@@ -95,6 +95,8 @@ public class DiagnozShowActivity extends AppCompatActivity implements View.OnCli
                     stringBuffer.append(questArray[i]+"\n  "+resArray[i+2]+"\n ");
                 }
             }
+
+            stringBuffer.append("\n");
         }
         return stringBuffer.toString();
     }
