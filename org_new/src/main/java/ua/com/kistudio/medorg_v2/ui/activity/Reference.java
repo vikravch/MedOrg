@@ -24,7 +24,7 @@ public class Reference extends Activity {
 		      		//startActivity(new Intent(Reference.this, Glosarij.class));
 		      		break;
 		      	case R.id.btn_clinics:
-		      		//startActivity(new Intent(Reference.this, AreasList.class));
+		      		startActivity(new Intent(Reference.this, AreasListActivity.class));
 		      		break;		      
 		      }
 		     }	catch ( Exception e) 

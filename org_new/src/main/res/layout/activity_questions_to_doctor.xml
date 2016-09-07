@@ -5,21 +5,35 @@
     android:layout_height="match_parent"
     android:background="@drawable/question_bottom"
     android:orientation="vertical"
-    tools:context=".Questions_to_doctor_Activity" >
+    tools:context=".ui.activity.QuestionsToDoctorActivity" >
 
     <!-- LayOut в якому розміщено логотип і назва програми -->
 
-    <TextView
+    <!--<TextView
+
         android:id="@+id/quest_to_doct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/RMZ_TextViewTitle"
         android:text="@string/quest_to_doct"
+        android:textSize="30sp" />-->
+
+    <TextView
+        android:id="@+id/quest_to_doct"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:gravity="center"
+        android:shadowColor="#C71585"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="@string/quest_to_doct"
         android:textSize="30sp" />
 
-    <LinearLayout
+    <!--<LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="match_parent"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
@@ -53,9 +67,9 @@
             android:textSize="25sp"
             />
 
-    </LinearLayout>
+    </LinearLayout>-->
 
-    <LinearLayout
+   <!-- <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
@@ -79,13 +93,16 @@
 
         </ListView>
 
-    </LinearLayout>
+    </LinearLayout>-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"
         android:gravity="center_horizontal"
-        style="@style/RMZ_InnerButtonLinear"
         android:orientation="vertical" >
 
 

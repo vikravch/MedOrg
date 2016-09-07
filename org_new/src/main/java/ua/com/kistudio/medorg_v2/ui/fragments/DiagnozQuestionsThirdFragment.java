@@ -73,20 +73,20 @@ public class DiagnozQuestionsThirdFragment extends Fragment implements RadioGrou
         radioButton.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         radioButton.setTextSize(18);
         radioButton.setShadowLayer(1, 1, 1, getResources().getColor(R.color.text_shadow_color));
-        radioButton.setId(1);
+        radioButton.setId(R.id.radio1);
 
         RadioButton radioButton2 = new RadioButton(getActivity());
         radioButton2.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         radioButton2.setTextSize(18);
         radioButton2.setShadowLayer(1, 1, 1, getResources().getColor(R.color.text_shadow_color));
-        radioButton2.setId(2);
+        radioButton2.setId(R.id.radio2);
 
         checkBox = new CheckBox(getActivity());
         checkBox.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         checkBox.setTextSize(18);
         checkBox.setShadowLayer(1, 1, 1, getResources().getColor(R.color.text_shadow_color));
         checkBox.setOnCheckedChangeListener(this);
-        checkBox.setId(3);
+        checkBox.setId(R.id.radio3);
 
         etOut = new EditText(getActivity());
         etOut.setLayoutParams(
@@ -122,10 +122,10 @@ public class DiagnozQuestionsThirdFragment extends Fragment implements RadioGrou
 
                         break;
                     case "1":
-                        radioGroup.check(1);
+                        radioGroup.check(R.id.radio1);
                         break;
                     default:
-                        radioGroup.check(2);
+                        radioGroup.check(R.id.radio2);
                         etOut.setText(savedAnsw);
                 }
 

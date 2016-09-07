@@ -6,14 +6,13 @@
     android:background="@drawable/info_center"
     android:orientation="vertical"
     tools:context="ua.iepor.itdep.ui.InfoActivity" >
-
-    <TextView
-        android:id="@+id/areasTextView"
-        android:text="@string/info_title"
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/RMZ_TextViewTitle"
-        />
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,17 +20,28 @@
         android:orientation="vertical" >
 
         <TextView
+            android:id="@+id/areasTextView"
+            android:text="@string/info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/RMZ_TextViewTitle"
+            />
+
+        <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/RMZ_TextViewSimpleText"
+
+            style="@style/RMZ_SimpleTextWithShadow"
             android:text="@string/info_content_first"/>
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/RMZ_TextViewSimpleText"
+            style="@style/RMZ_SimpleTextWithShadow"
+
             android:text = "@string/info_content_second"/>
 
     </LinearLayout>
+    </ScrollView>
 </LinearLayout>

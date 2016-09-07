@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.io.File;
@@ -117,7 +118,7 @@ public class EditPruznachennjaActivity extends BaseActivity {
 						
 					break;
 				case R.id.listenAudio:
-					btnAudio = (Button) findViewById(R.id.imageButton2);
+					/*ImageButton btnAudioImage = (ImageButton) findViewById(R.id.imageButton2);
 					if ( btnAudio.getText().toString().equals("СТОП") )
 					{
 						in1.playStop(view);
@@ -129,7 +130,7 @@ public class EditPruznachennjaActivity extends BaseActivity {
 						in1.playStart(view, file_Path, file_Name_Audio, EditPruznachennjaActivity.this);
 						btnAudio.setText("СТОП");
 						btnAudio.setBackgroundResource(R.drawable.btn_stop);
-					}
+					}*/
 					break;
 				case R.id.editQuest:
 					//Toast.makeText(EditPruznachennjaActivity.this, "Введіть текст запитання", Toast.LENGTH_LONG).show();

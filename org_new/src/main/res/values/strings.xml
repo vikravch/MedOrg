@@ -34,8 +34,8 @@
     <string name="button_standart_quest_to_doct">Стандартні</string>
     <string name="button_your_quest_to_doctor">Мої</string>
     <string name="info_title">Інформація про розробника:</string>
-    <string name="info_content_first">Інститут експериментальної патології, онкології і радіобіології ім. Р.Є.Кавецького НАН України (ІЕПОР) - сучасний академічний центр із значним матеріально-технічним ресурсом і кадровим потенціалом, що має багаторічний досвід роботи в галузі експериментальної патології, біотехнології, молекулярної і клінічної онкології. \n Наша адреса: Україна 03022, Київ-22, вул. Васильківська, 45 \n Приймальня: з 9.00 до 17.30, понеділок - пятниця. \nТел. +38 (044) 259-01-83. \nФакс +38 (044) 258-16-56 \n e-mail nauka@onconet.kiev.ua \n Сайт http://www.iepor.org.ua</string>
-    <string name="info_content_second">Відділ науково-методичного забезпечення іноваційної діяльності. \nТел. +38 (044) 259-01-67. \nСайт http://www.iepor.org.ua/uk/scientific-methodical-provision-innovations.html \nСайт - http://www.breast-cancer.org.ua</string>
+    <string name="info_content_first">\n Інститут експериментальної патології, онкології і радіобіології ім. Р.Є.Кавецького НАН України (ІЕПОР) - сучасний академічний центр із значним матеріально-технічним ресурсом і кадровим потенціалом, що має багаторічний досвід роботи в галузі експериментальної патології, біотехнології, молекулярної і клінічної онкології. \n \nНаша адреса: Україна 03022, Київ-22, вул. Васильківська, 45 \n\n Приймальня: з 9.00 до 17.30, понеділок - пятниця. \n\nТел. +38 (044) 259-01-83. \n\nФакс +38 (044) 258-16-56 \n\n e-mail nauka@onconet.kiev.ua \n\n Сайт http://www.iepor.org.ua</string>
+    <string name="info_content_second">\n\nВідділ науково-методичного забезпечення іноваційної діяльності. \n\nТел. +38 (044) 259-01-67. \n\nСайт http://www.iepor.org.ua/uk/scientific-methodical-provision-innovations.html \n\nСайт - http://www.breast-cancer.org.ua</string>
 
     <string name="doctor_toast_text">Оберіть раніше введого лікаря для перегляду або редагування. Якщо потрібно ввести нового, натисніть Додати.</string>
     <string name="doctor_empty_text">Лікарів у списку немає</string>
@@ -54,5 +54,6 @@
     <string name="send_button">Надіслати</string>
     <string name="show_history_button">Список</string>
     <string name="choose_doctor_text">Оберіть лікаря</string>
+    <string name="header_areas_detail">Детально про заклад</string>
 
 </resources>

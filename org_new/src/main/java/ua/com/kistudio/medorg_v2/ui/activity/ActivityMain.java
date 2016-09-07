@@ -50,15 +50,14 @@ public class ActivityMain extends BaseActivity implements OnClickListener {
 				startActivity(new Intent(ActivityMain.this, HistoryActivity.class));
 				break;
 			case R.id.iBtnQuestion: 
-				//startActivity(new Intent(ActivityMain.this, QuestionsToDoctorActivity.class));
-				//TODO Add Question to doctor activity
+				startActivity(new Intent(ActivityMain.this, QuestionsToDoctorActivity.class));
+
 				break;
 			case R.id.iBtnDoctor: 
 				startActivity(new Intent(ActivityMain.this, DoctorActivity.class));
 				break;
 			case R.id.iBtnHelp: 
-				//startActivity(new Intent(ActivityMain.this, Reference.class));
-				//TODO Add Help activity
+				startActivity(new Intent(ActivityMain.this, Reference.class));
 				break;
 			case R.id.iBtnInfo: 
 				startActivity(new Intent(ActivityMain.this, InfoActivity.class));

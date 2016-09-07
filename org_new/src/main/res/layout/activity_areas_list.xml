@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/dovidnyk_center"
     android:orientation="vertical"
-    tools:context=".AreasList" >
+    tools:context=".ui.activity.AreasListActivity" >
 
     <TextView
         android:id="@+id/areasTextView"
@@ -17,7 +17,7 @@
         android:shadowColor="#C71585"
         android:shadowDx="1"
         android:shadowDy="1"
-        android:shadowRadius="1"        
+        android:shadowRadius="1"
         android:textSize="30sp" />
 
     <ListView
